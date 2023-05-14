@@ -1,3 +1,5 @@
-This porject was made using the Net Ninja TypeScript tutorial.
+Welcome to the Financial Logger!
 
-https://www.youtube.com/watch?v=2pZmKW9-I_k
+This project was made using TypeScript.
+
+[Source:](https://www.youtube.com/watch?v=2pZmKW9-I_k)
