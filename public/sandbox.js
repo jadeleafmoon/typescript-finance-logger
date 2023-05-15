@@ -1,11 +1,12 @@
+"use strict";
 //any type
-var age = 25;
+let age = 25;
 age = true;
 age = 'ten';
-var mixed = [];
+let mixed = [];
 mixed.push(23);
 mixed.push(false);
-var ninja;
+let ninja;
 ninja = {
     name: true,
     age: 'ten'
