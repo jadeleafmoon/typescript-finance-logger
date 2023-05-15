@@ -1,18 +1,25 @@
 "use strict";
-// functions
+// Function signatures
+// let greet: Function;
+// example 1
+// must return void
 let greet;
-greet = () => {
-    console.log("hi!");
+greet = (name, greeting) => {
+    console.log('${name} says ${greeting}');
 };
-const add = (a, b, c) => {
-    console.log(a + b);
-    console.log("c", c);
+// example 2
+// must return a number
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === "add")
+        return numOne + numTwo;
+    else
+        return numOne - numTwo;
 };
-console.log("add will return, ", add(5, 10));
-const minus = (a, b) => {
-    return a + b;
+// example 3
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+    return 10;
 };
-const multiply = (a, b) => {
-    return a + b;
-};
-console.log("Multiply", multiply(4, 5));
+logDetails({ name: "Mario", age: 20 });
