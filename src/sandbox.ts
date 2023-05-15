@@ -1,21 +1,18 @@
-//any type
-let age: any = 25;
-age = true;
-age = 'ten';
+// functions
 
-let mixed: any[] = [];
+let greet: Function;
 
-mixed.push(23);
-mixed.push(false);
-
-let ninja: {
-  name: any,
-  age: any
+greet = () => {
+  console.log("hi!")
 };
 
-ninja = {
-  name: true,
-  age: 'ten'
+const add = (a: number, b: number, c: number | string = 12) => {
+  console.log(a + b);
+  console.log("c", c);
 };
 
-console.log(ninja);
+add(5, 10);
+
+const minus = (a: number, b: number): number => {
+  return a + b;
+}

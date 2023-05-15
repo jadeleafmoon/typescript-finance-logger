@@ -1,14 +1,11 @@
 "use strict";
-//any type
-let age = 25;
-age = true;
-age = 'ten';
-let mixed = [];
-mixed.push(23);
-mixed.push(false);
-let ninja;
-ninja = {
-    name: true,
-    age: 'ten'
+// functions
+let greet;
+greet = () => {
+    console.log("hi!");
 };
-console.log(ninja);
+const add = (a, b, c = 12) => {
+    console.log(a + b);
+    console.log("c", c);
+};
+add(5, 10);
