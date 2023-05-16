@@ -19,7 +19,7 @@ class Invoice {
         this.amount = a;
     }
     format() {
-        return `${this.client} owes $${this.amount} for ${this.details}`;
+        return `${this.client} owes ${this.amount} for ${this.details}`;
     }
 }
 const invOne = new Invoice('mario', 'work on the mario website', 250);
@@ -31,7 +31,9 @@ invoices.push(invTwo);
 // we can change properties
 invOne.client = "yoshi";
 invTwo.amount = 400;
-console.log(invoices);
+invoices.forEach(inv => {
+    console.log(inv.client, inv.details, inv.amount, inv.format());
+});
 const form = document.querySelector('.new-item-form');
 // console.log(form.children);
 // inputs
