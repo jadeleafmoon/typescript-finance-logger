@@ -21,5 +21,22 @@ form.addEventListener('submit', (e) => {
         doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
     }
     list.render(doc, type.value, 'end');
-    console.log(doc);
 });
+// Generics
+const addUID = (obj) => {
+    let uid = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { uid });
+};
+let docOne = addUID({ name: 'yoshi', age: 40 });
+console.log("docOne", docOne.age);
+const docThree = {
+    uid: 1,
+    resourceName: 'person',
+    data: { name: 'bob' }
+};
+const docFour = {
+    uid: 2,
+    resourceName: 'shoppingList',
+    data: ['bread', 'milk']
+};
+console.log(docThree, docFour);
