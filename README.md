@@ -4,6 +4,8 @@ Welcome to the Financial Logger!
 # Overview
 This project was made using TypeScript. It is a simple financial logger to keep track of invoices and payments.
 
+<img width="1238" alt="demo" src="https://github.com/jadeleafmoon/typescript-finance-logger/assets/83651965/3a1d1f36-5b2e-461f-9f89-4a20de6cb60a">
+
 # Goal
 The purpose os this project was to learn how to use TypeScript and get familiar with concepts like implicit vs explicit types, union types, objects, classes, interfaces, aliases, generics, tuples, and so on. 
 
